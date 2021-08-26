@@ -43,12 +43,13 @@ void loop()
     float cevre = cap * PI; // Çevre Hesabı
     float hesap = cevre / pulse; // Hesaplanan çevreyi Pulse adedine bölünüyor
 
-    uzunluk = (sonPulse * hesap)/10; // Elde edilen pulse ile hesaplanan 1 pulse uzunluğunu çarpılıyor. /10 ->cm
+    uzunluk = (sonPulse * hesap)/10; // Elde edilen pulse ile hesaplanan 1 pulse uzunluğunu çarpılıyor. 
+     //Uzunluk değerini buradaki gibi 10 a bölersek ->cm ; bölmezsek mm cinsinden ölçüm hesaplanır (1cm= 10mm)
 
     Serial.print(sonPulse); // Pulse Sayısı
     Serial.print(" -- ");
-    Serial.print(uzunluk); // Milimetre cinsinden uzunluk ölçüsü
-    Serial.println(" mm");
+    Serial.print(uzunluk); // Santimetre cinsinden uzunluk ölçüsü
+    Serial.println(" Cm");
 
     lcd.clear(); // LCD Ekran Siliniyor
     lcd.setCursor(0, 0); // Cursor Ayarlanıyor
