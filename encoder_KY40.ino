@@ -2,6 +2,9 @@
    https://www.youtube.com/watch?time_continue=2&v=bXT9G5DQub4
    Bünyamin GÖZÜPEK hocamız tarafından geliştirilmiş olup,
    Dr.TRonik tarafından  uyarlanmıştır...
+   Enkoderi sıfırlamak için 
+   enkoder.write(0); //Encoder objemiz Encoder enkoder(2, 3) satırında "enkoder" olarak tanımlandı...
+   kullanılabilir...
 */
 
 #include <LiquidCrystal_I2C.h> //https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library  I2C+LCD ekran için
